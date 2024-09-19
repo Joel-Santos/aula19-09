@@ -10,6 +10,6 @@ class MusicViewSet(viewsets.ModelViewSet):
     serializer_class = MusicSerializer
     filter_backends = [DjangoFilterBackend, SearchFilter]
     filterset_filds = ['titulo']
-    search_filds =['titulo']
+    search_fields =['titulo', 'album']
 
 
